@@ -21,7 +21,7 @@ res.send("<h1>Hello World</h1>");
 
 http.createServer( app)
     .listen(3001, function () {
-        console.log('Example server listening on port 3000! Go to http://127.0.0.1:3001/')
+        console.log('Example server listening on port 3001! Go to http://127.0.0.1:3001/')
     });
 
 https.createServer({
