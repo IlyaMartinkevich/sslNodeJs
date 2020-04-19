@@ -22,7 +22,7 @@ res.send(md5(req.params.str+timeInMs));
 
 http.createServer( app)
     .listen(3001, function () {
-        console.log('Example server listening on port 3001! Go to http://127.0.0.1:3001/')
+        console.log('Example server listening on port 3001! Go to http://localhost:3001/')
     });
 
 https.createServer({
@@ -30,5 +30,5 @@ https.createServer({
     cert: fs.readFileSync('ssl/rootCA.crt')
 }, app)
     .listen(3000, function () {
-        console.log('Example server listening on port 3000! Go to https://127.0.0.1:3000/')
+        console.log('Example server listening on port 3000! Go to https://localhost:3000/')
 });
